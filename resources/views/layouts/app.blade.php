@@ -16,7 +16,7 @@
 <div class="container">
     <div class="row">
     <div class="col-1">    
-            <a href="{{route('home')}}" ><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/194_Laravel-512.png" width="100%" height="80%"></a>
+            <a href="{{route('users.index')}}" ><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/194_Laravel-512.png" width="100%" height="80%"></a>
     </div>
     <div class="col-11">
             <nav class="navbar navbar-expand-sm bg-light navbar-light">

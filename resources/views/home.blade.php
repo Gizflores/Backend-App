@@ -72,8 +72,8 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{route('users.index')}}">Home</a>
-                        <a href="{{ Auth::logout() }}">Logout</a>
+                        <a class="btn btn-outline-success" href="{{route('users.index')}}">Cruds</a>
+                        <a class="btn btn-outline-success" href="{{ Auth::logout() }}">Logout</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>    
                         @if (Route::has('register'))
@@ -86,17 +86,7 @@
             <div class="content">
                 <div class="title m-b-md">
                 <strong>IONIC 4 + Laravel 6</strong> <br> Landing Page
-                </div>
-<br><br>
-                    @if (Route::has('login'))
-                    @auth
-                       
-                    @else
-                    <div class="links">                
-                        <a class="btn btn-outline-success" href="{{route('users.index')}}">Crud</a>                            
-                    </div>
-                    @endauth
-                    @endif
+                </div><br><br>                    
             </div>
         </div>
     </body>
