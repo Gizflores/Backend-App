@@ -43,9 +43,9 @@
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Apis</a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="http://127.0.0.1:8000/api/getUser">User</a>
-                          <a class="dropdown-item" href="http://127.0.0.1:8000/api/getBoutique">Boutique</a>
-                          <a class="dropdown-item" href="http://127.0.0.1:8000/api/getGallery">Gallery</a>
+                          <a class="dropdown-item" href="./api/getUser">User</a>
+                          <a class="dropdown-item" href="./api/getBoutique">Boutique</a>
+                          <a class="dropdown-item" href="./api/getGallery">Gallery</a>
                         </div>
                       </li>                     
                     </ul>
