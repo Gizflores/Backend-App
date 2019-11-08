@@ -29,7 +29,7 @@ class InventarioController extends Controller
 
     public function store(Request $request){       
         $product = new inventario;
-        $product->id_product        = $request->id_product;
+        $product->id                = $request->id;
         $product->id_boutique       = $request->id_boutique;
         $product->img_principal     = $request->img_principal;
         $product->nombre            = $request->nombre;
@@ -42,7 +42,7 @@ class InventarioController extends Controller
 
     public function update(Request $request, $id){   
         $product = inventario::find($id);
-        $product->id_product        = $request->id_product;
+        $product->id                = $request->id;
         $product->id_boutique       = $request->id_boutique;
         $product->img_principal     = $request->img_principal;
         $product->nombre            = $request->nombre;
