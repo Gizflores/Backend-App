@@ -26,8 +26,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('talla','TallaController');
     Route::resource('tallas_item','TallasItemController');
     Route::resource('vista','VistaController');
+    Route::get('/home', 'HomeController@index')->name('home');
 
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
