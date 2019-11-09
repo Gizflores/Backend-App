@@ -48,7 +48,7 @@
                           <a class="dropdown-item" href="./api/getGallery">Gallery</a>
                         </div>
                       </li>     
-                      <li class="nav-item active" style="float:right">
+                      <li class="nav-item">
                         <a class="nav-link" href="{{Auth::logout()}}">Logout</a>
                         {{-- <a class="btn btn-outline-success" href="{{ Auth::logout() }}">Logout</a> --}}
                       </li>                
