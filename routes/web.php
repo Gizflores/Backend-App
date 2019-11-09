@@ -16,18 +16,19 @@ Route::get('/', function () {
 });
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::resource('users','CrudController');
-    Route::resource('boutique','BoutiqueController');
-    Route::resource('categoria','CategoriaController');
-    Route::resource('gallery','GalleryController');
-    Route::resource('inventario','InventarioController');
-    Route::resource('likedislike','LikeDislikeController');
-    Route::resource('rates','RatesController');
-    Route::resource('talla','TallaController');
-    Route::resource('tallas_item','TallasItemController');
-    Route::resource('vista','VistaController');
-    Route::get('/home', 'HomeController@index')->name('home');
+   
 
 });
 
 Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('users','CrudController');
+Route::resource('boutique','BoutiqueController');
+Route::resource('categoria','CategoriaController');
+Route::resource('gallery','GalleryController');
+Route::resource('inventario','InventarioController');
+Route::resource('likedislike','LikeDislikeController');
+Route::resource('rates','RatesController');
+Route::resource('talla','TallaController');
+Route::resource('tallas_item','TallasItemController');
+Route::resource('vista','VistaController');
