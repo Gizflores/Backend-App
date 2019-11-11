@@ -56,5 +56,5 @@ class CrudController extends Controller
     public function edit($id){
         $product = User::find($id);
         return view('users.edit',compact('product'));
-    }
+    }    
 }
