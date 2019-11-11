@@ -5,6 +5,7 @@
 <div class="row">
 <div class="col-sm-12">
     <h2>Listado de Usuarios
+    <h2>{{$user}}</h2>
     <a href="{{route('users.create')}}" class="btn btn-primary pull-right" style="float: right">Nuevo</a>
     </h2>
     @include('users.fragment.info')

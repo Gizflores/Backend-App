@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::resource('users','CrudController');
+    
 
 });
 
@@ -31,3 +31,4 @@ Route::resource('rates','RatesController');
 Route::resource('talla','TallaController');
 Route::resource('tallas_item','TallasItemController');
 Route::resource('vista','VistaController');
+Route::resource('users','CrudController');

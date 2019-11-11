@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\User;
 
@@ -8,8 +9,16 @@ class CrudController extends Controller
 {
     public function index()
     {
+        
+        if (Auth::check()) {
+            $user = Auth::user();
+        }
+        else{
+            $user='ninguno';
+        }
         $products = User::orderBy('id','ASC')->paginate();
-        return view('users.index', compact('products'));
+        return view('users.index', compact('products','user'));
+
     }
     public function show($id){
         $product = User::find($id);
