@@ -10,7 +10,7 @@ $factory->define(gallery::class, function (Faker $faker) {
     
     return [
         'id_product' => rand(1, 15),
-        'url' => $faker->imageUrl($width = 411, $height = 823),
+        'url' => $faker->imageUrl($width = 411, $height = 823,'fashion'),
         
     ];
 });
